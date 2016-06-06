@@ -1,9 +1,8 @@
 library(stylo)
 library(tm)
 library(stringr)
-setwd('C:/Shahrzad_Docs/PERSONAL_DOCUMENTS/COURSERA/CAPSTONE Project/Coursera-SwiftKey/final/en_US')
-tri_df <- read.csv("FINAL_triGramDF.csv", header=TRUE)
-bi_df <- read.csv("FINAL_biGramDF.csv", header=TRUE)
+tri_df <- read.csv("./FINAL_triGramDF.csv", header=TRUE)
+bi_df <- read.csv("./FINAL_biGramDF.csv", header=TRUE)
 
 nextword <- function(phrase1) {
 cleanphrase1 <- tolower(phrase1)
